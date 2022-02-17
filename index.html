@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacija</title>
+
+<style>
+    #pravougaonik {
+        width: 700px;
+        height: 600px;
+        margin: 0 auto;
+        background-color: #050210;
+        
+    }
+
+    
+    
+    #krug  {
+            width: 400px;
+            height: 400px;
+            transform: translate(150px, 105px);
+            border-radius: 100%;
+
+            animation-name: vrteska;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear;
+    
+            background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+            /*box-shadow: 0 0 40px 40px #fb5dad, 0 0 50px 50px #55fb9f, 0 0 50px 50px #b97aff ;*/
+    
+ 
+        }
+            #crni-krug {
+            width: 280px;
+            height: 280px;
+            border-radius: 100%;
+            background-color: rgb(4, 3, 10);
+            transform: translate(60px, 60px);
+
+            
+
+            
+         }
+
+         #centar {
+         
+            width: 280px;
+            height: 280px;
+            border-radius: 100%;
+            background-color: rgb(4, 3, 10);
+
+            animation-name: vrtlog;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease;
+            
+        }
+
+        @keyframes vrteska{
+            0% {
+            transform: translate(150px, 105px) rotate(0deg);
+            
+        }
+            100% {
+            transform: translate(150px, 105px) rotate(360deg);
+            
+            box-shadow: 20px 0 40px 8px #fb5dad,20px 0 40px 8px #55fb9f, 20px 0 40px 8px #b97aff ;
+            filter: drop-shadow(0 0 40px rgb(197, 184, 184));
+
+        }
+    }
+    @keyframes vrtlog{
+            0% {
+                
+                background-color:  rgb(2, 2, 31);
+
+                
+        }
+        20% {
+             
+             background-color: rgb(30, 8, 82);
+        }
+        50% {
+            background-color: rgb(35, 13, 87);
+        }
+        
+         
+        85% {
+                
+                background-color:  rgb(16, 16, 65);
+
+        }
+        100% {
+           
+            background-color:  rgb(12, 12, 14);
+        }
+
+
+
+
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+    <div id="pravougaonik">
+      
+        <div id="krug">
+       
+            <div id="crni-krug">
+                <div id="centar">
+
+                </div>
+
+                </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
